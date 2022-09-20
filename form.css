@@ -35,7 +35,33 @@ input[type=submit] {
 	color: #fff
 }
 
+input[type=checkbox] {
+	width: 250px;
+	background-color: #35c8ef;
+	border-radius: 5px;
+	border: 2px solid blue;
+	color: #fff
+}
+
+label{
+	width: 280px;
+	height: 70px;
+	padding: 5px;
+	margin: 20px 0 10px;
+	border-radius: 5px;
+	border: 4px solid #acbfa5
+}
+
 textarea {
+	width: 280px;
+	height: 70px;
+	padding: 5px;
+	margin: 20px 0 10px;
+	border-radius: 5px;
+	border: 4px solid #acbfa5
+}
+
+select {
 	width: 280px;
 	height: 70px;
 	padding: 5px;

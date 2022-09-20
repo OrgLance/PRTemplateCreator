@@ -136,6 +136,61 @@ function textareaFunction() {
 	r.setAttribute("id", "id_" + i);
 	document.getElementById("myForm").appendChild(r);
 }
+
+/*
+-----------------------------------------------------------------------------
+
+Functions that will be called upon, when user click on the Message textarea field.
+
+------------------------------------------------------------------------------
+*/
+function dropdownFunction() {
+	var r = document.createElement('span');
+	var y = document.createElement("SELECT");
+	var g = document.createElement("IMG");
+	y.setAttribute("cols", "17");
+	y.setAttribute("placeholder", "message..");
+	g.setAttribute("src", "delete.png");
+	increment();
+	y.setAttribute("Name", "textelement_" + i);
+	r.appendChild(y);
+	g.setAttribute("onclick", "removeElement('myForm','id_" + i + "')");
+	r.appendChild(g);
+	r.setAttribute("id", "id_" + i);
+	
+	var z = document.createElement("option");
+  	z.setAttribute("value", "volvocar");
+  	var t = document.createTextNode("Volvo");
+  	z.appendChild(t);
+	y.appendChild(z);
+
+	document.getElementById("myForm").appendChild(r);
+}
+
+
+function checkboxFunction() {
+	var r = document.createElement('span');
+	
+	var x = document.createElement("LABEL");
+	var t = document.createTextNode("Male");
+	x.setAttribute("for", "male");
+	x.appendChild(t);
+
+	r.appendChild(x);
+	
+	var y = document.createElement("INPUT");
+	y.setAttribute("type", "checkbox");
+	y.setAttribute("placeholder", "Contact");
+	var g = document.createElement("IMG");
+	g.setAttribute("src", "delete.png");
+	increment();
+	y.setAttribute("Name", "textelement_" + i);
+	r.appendChild(y);
+	g.setAttribute("onclick", "removeElement('myForm','id_" + i + "')");
+	r.appendChild(g);
+	r.setAttribute("id", "id_" + i);
+	document.getElementById("myForm").appendChild(r);
+}
 /*
 -----------------------------------------------------------------------------
 
