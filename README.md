@@ -1,3 +1,3 @@
 # PRTemplateCreator
 
-https://hgvanpariya.github.io/PRTemplateCreator/
+https://orglance.github.io/PRTemplateCreator/
